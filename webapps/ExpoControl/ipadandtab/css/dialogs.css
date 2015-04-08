@@ -1,0 +1,162 @@
+/* стиль диалога выбор корреспондента */
+
+.picklist{    
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;    
+    background: white;    
+    text-align: center;
+    display:block;
+    z-index:4; 
+}
+
+.header{
+	border-bottom:1px solid gray;
+	width:100%;
+	line-height:40px;
+	position:absolute;
+	top:0;
+	left:0;
+	cursor: move;
+	background-color:#ccc; 
+	font-size:1.3em;
+}
+
+.contentpane{
+	margin-top:10px;
+   	width:99%;
+   	display:inline-block;
+   	border-top:1px solid #cdcdcd;
+   	background:#ffffff;
+}
+
+.divSearch{
+	font-size:12px;
+	float:left;
+	height:25px;
+	width:40%;
+}
+
+.blockWindow{
+	display:block; 
+	position:absolute;
+	z-index:2;	
+	top:0;
+	left:0;
+	background-Color: #FFFFFF;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40, Style=0);
+}
+/* стиль диалога параметры согласовани€*/
+
+.picklistCoord{ 
+	width:100%;
+    position: absolute;    
+    border: 1px solid lightgray;
+    background: white;    
+    text-align: center;
+    display:block;
+    z-index:3;  
+    top:0px;
+    left:0px; 
+  
+}
+
+.headerBoxCoord{
+	border-bottom:1px solid gray;
+	width:100%;
+	line-height:45px;
+	position:absolute;
+	top:0;
+	left:0;
+	cursor: move;
+	background-color:#ccc; 
+	font-size:1.2em;
+}
+
+.contentCoord{
+	width:100%;
+	height:87%;
+	margin-top:5%;
+}
+
+.selectedItem{
+	background:#FFF1AF;
+}
+
+/* стиль диалога "комментарий" */
+
+.comment{ 
+	font-size:0.75em;   
+    width:470px;
+    height:260px;
+    position: absolute;    
+    border: 1px solid #ccc;
+    background: white;    
+    padding: 10px 0px 10px 0px;    
+    text-align: center;
+    display:block;
+    z-index:3;   
+}
+
+.headerComment{
+	border-bottom:1px solid #ccc;
+	width:100%;
+	height:21px;
+	position:absolute;
+	top:0;
+	left:0;
+	cursor: move;
+	background-color:#dde0ec; 
+	font-size:0.8em; 
+}
+
+.contentComment{
+	height:85%;
+	border-bottom:3px solid #ccc;
+	
+}
+
+/* —тиль диалога вывода сообщений */ 
+.messageBox{ 
+    width:400px;
+    height:150px;
+    position: absolute;    
+    border: 1px solid #a6c9e2;
+    background: white;    
+    padding: 10px 10px 10px 10px;    
+    text-align: center;
+    display:block;
+    z-index:3;   
+}
+
+.headerMessageBox{
+	border-bottom:1px solid #56c3fe;
+	width:398px;
+	height:21px;
+	position:absolute;
+	top:0;
+	left:0;
+	cursor: move;
+	background-color:#dde0ec; 
+	font-size:0.8em;
+
+}
+
+.messageBoxContent{
+	height:30%;
+	margin-top:15%;
+}
+
+.closeButton{    
+    position: absolute;    
+    top: 0px;    
+    right: 0px; 
+    cursor: pointer;    
+    padding: 2px 4px 2px 4px;    
+}
+
+.inputboxfield{
+	border: 1px solid #CCC;	
+}

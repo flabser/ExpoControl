@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rule type="page" id="activity" mode="on" history="on">
+	<description></description>
+	<caching>NO_CACHING</caching>
+	<xsltfile>pages/page-activity.xsl</xsltfile>
+	<element mode="ON" type="INCLUDED_PAGE">
+		<name>outline</name>
+		<value>outline</value>
+	</element>
+	<element mode="ON" type="SCRIPT">
+		<name>view_content</name>
+		<events>
+			<doscript source="file">page.activity_list.DoScript</doscript>
+		</events>
+	</element>
+	<caption name="category" source="KEYWORD">Документы организации</caption>
+	<caption name="view" source="KEYWORD">Задания</caption>
+	<caption name="briefcontent" source="KEYWORD">Описание документа</caption>
+	<caption name="page" source="KEYWORD">Страница</caption>
+	<caption name="documents" source="KEYWORD">Документов</caption>
+	<caption name="updates" source="KEYWORD">Обновлено</caption>
+	<caption name="from" source="KEYWORD">из</caption>
+	<caption name="event_time" source="KEYWORD">Дата и время</caption>
+	<caption name="action" source="KEYWORD">Действие</caption>
+	<caption name="fio" source="KEYWORD">ФИО</caption>
+	<caption name="rfid">№ RFID билета</caption>
+	<caption name="object">Объект</caption>
+	<caption name="viewdate" source="KEYWORD">Дата</caption>
+	<caption name="BTNDELETEDOCUMENT" source="KEYWORD">Удалить документ</caption>
+	<caption name="days" source="KEYWORD">дней</caption>
+	<caption name="helpcaption" source="KEYWORD">Помощь</caption>
+	<caption name="viewnamecaption" source="KEYWORD">Задания</caption>
+	<caption name="logout" source="KEYWORD">Завершить работу</caption>
+	<caption name ="removefromfav" source ="KEYWORD">Удалить с избранного</caption>
+	<caption name ="view_userprofile" source ="KEYWORD">Посмотреть свойства текущего пользователя</caption>
+	<caption name="search" source ="KEYWORD">Поиск</caption>
+</rule>

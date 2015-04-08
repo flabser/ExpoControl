@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rule id="ExpoControl" mode="on" type="global">
+	<description>Система контроля доступа EXPO</description>
+	<orgname>ТОО "Lab of the Future"</orgname>
+	<liccount>100</liccount>
+	<logo/>
+	<database autodeploy="ON">
+		<name>ExpoControl</name>
+		<driver>org.postgresql.Driver</driver>
+		<url>jdbc:postgresql://localhost/ExpoControl</url>
+		<username/>
+		<password/>
+    <connectionid>DqKHJQAHsDSkMwK0zvkzPQ==@@@rFnCvy5VcrQ=</connectionid></database>
+	<externalmodule type="STRUCTURE">Structure</externalmodule>
+	<daemons>
+		<daemon>
+			<class>kz.flabs.appdaemon.CycleControl</class>
+			<scheduler mode="ON">
+				<mininterval daysofweek="WORKWEEK,">360</mininterval>
+			</scheduler>
+		</daemon>
+		<daemon>
+			<class>kz.flabs.appdaemon.Recalculator</class>
+			<scheduler mode="ON">
+				<mininterval daysofweek="WORKWEEK,">360</mininterval>
+			</scheduler>
+		</daemon>
+		<daemon>
+			<class>kz.flabs.appdaemon.TimeWaiting</class>
+			<scheduler mode="ON">
+				<mininterval daysofweek="WORKWEEK,">360</mininterval>
+			</scheduler>
+		</daemon>		
+	</daemons>
+	<entrypoint>Provider?type=static&amp;id=start</entrypoint>
+	<defaultredirecturl>Provider?type=page&amp;id=objects&amp;page=0</defaultredirecturl>
+	<langs>
+		<entry id="RUS" isprimary="1">Русский</entry>
+		<entry id="KAZ">Казакша</entry>
+		<entry id="ENG">English</entry>
+	</langs>
+	<skins>
+		<entry id="ipadandtab" path="./webapps/ExpoControl/ipadandtab/xsl">IPadAndTab</entry>
+		<entry default="on" errorpage="error.xsl" id="classic" path="./webapps/ExpoControl/classic/xsl">Classic</entry>
+	</skins>
+	<roles>
+		<entry id="administrator_software">Администратор ПО</entry>
+		<entry id="registrator">Регистратор (По заявкам)</entry>
+		<entry id="reception">Ресепшн</entry>
+		<entry id="security">Пост охраны на павельонах</entry>
+	</roles>
+	<markdelaysec>5</markdelaysec>
+	<eds mode="OFF">
+		<keypass/>
+		<keystore/>
+        <ocsp/>
+	</eds>
+</rule>

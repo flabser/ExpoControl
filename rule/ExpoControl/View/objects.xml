@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rule type="view" id="objects">
+	<description>Объекты выставки</description>
+	<query>objects</query>		
+	<xsltfile>views\objectspicklist.xsl</xsltfile>	
+</rule>

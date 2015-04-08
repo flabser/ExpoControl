@@ -1,0 +1,155 @@
+/* для samsung*/
+.small .gray.button.form, .small .gray.button.form:visited	{
+	margin:5px 5px 5px 5px ;
+	background: -moz-linear-gradient(center bottom , #DDDDDD, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #FFFFFF;
+    color: #333333;
+    text-shadow: 0 1px 1px #FFFFFF;
+    font: 10px 'trebuchet MS', 'Lucida Sans', Arial;
+}
+
+.small .authfields{	
+	width:60%;
+	height:55%;
+	border:1px solid black;
+	overflow:hidden;
+	box-shadow: black 0 3px 8px;
+	border-radius: 8px;
+	background:#E0E0E0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+	-moz-box-shadow: black 0 3px 8px;
+	-moz-border-radius: 8px;
+	-webkit-box-shadow: black 0 3px 8px;
+	-webkit-border-radius: 8px;
+	font-family: 'trebuchet MS', 'Lucida Sans', Arial;
+	margin-top:10%;
+	margin-left:20%
+}
+
+.small .authfields input{	
+	font-size:15px;
+}
+
+.small .authfields td{	
+	font-size:14px;
+}
+
+.small .footer{
+	width:99%;
+	margin-top:3%;
+	border-top: 1px solid #ccc;
+	padding-top:3px;
+	font-family: 'trebuchet MS', 'Lucida Sans', Arial;
+	font-size: 14px;
+}
+
+
+.small .button, .small .button:visited{
+	background: #e4e4e4;
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color:  #f2f2f2; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	cursor: pointer;
+	text-align:center;
+	font: 11px 'trebuchet MS', 'Lucida Sans', Arial;
+}
+    
+.small .button:active	{ top: 1px; }
+.small .gray.button, .small .gray.button:visited	{
+	background: -moz-linear-gradient(center bottom , #DDDDDD, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #FFFFFF;
+    color: #333333;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+/*для ipad*/
+
+.authfields{	
+	width:60%;
+	height:45%;
+	border:1px solid black;
+	overflow:hidden;
+	box-shadow: black 0 3px 8px;
+	border-radius: 8px;
+	background:#E0E0E0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+	-moz-box-shadow: black 0 3px 8px;
+	-moz-border-radius: 8px;
+	-webkit-box-shadow: black 0 3px 8px;
+	-webkit-border-radius: 8px;
+	font-family: 'trebuchet MS', 'Lucida Sans', Arial;
+	margin-top:13%;
+	margin-left:20%
+}
+
+.authfields input{	
+	font-size:16px;
+}
+
+.authfields td{	
+	font-size:15px;
+}
+	
+.footer{
+	position:absolute;
+	top:83%;
+	width:99%;
+	font-size:0.6em;
+	margin-top:3.5%;
+	border-top: 1px solid #ccc;
+	padding-top:7px;
+	font-family: 'trebuchet MS', 'Lucida Sans', Arial;
+	font-size: 15px;
+}
+
+img{
+	border:none;
+}
+
+.button, .button:visited{
+	background: #e4e4e4;
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color:  #f2f2f2; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	cursor: pointer;
+	text-align:center;
+	font: 15px 'trebuchet MS', 'Lucida Sans', Arial;
+}
+    
+.button:active	{ top: 1px; }
+.gray.button, .gray.button:visited	{
+	background: -moz-linear-gradient(center bottom , #DDDDDD, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #FFFFFF;
+    color: #333333;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+.gray.button.form, .gray.button.form:visited	{
+	margin:5px 5px 5px 5px ;
+	background: -moz-linear-gradient(center bottom , #DDDDDD, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #FFFFFF;
+    color: #333333;
+    text-shadow: 0 1px 1px #FFFFFF;
+    
+}
+
+.actionbar{
+	/*position:absolute;*/
+	background:#FFFFFF;
+	top:3px;
+	height:80px;
+	border-bottom: 1px solid gray;
+	width:99%;
+}

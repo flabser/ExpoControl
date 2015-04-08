@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rule type="content" id="start" mode="on" anonymous="on">
+	<description>Рабочая область</description>
+	<xsltfile>workspace.xsl</xsltfile>
+	<title source="SCRIPT"><![CDATA[
+		String[] getStringValue(_Session session, String lang){
+		//	println(lang);		
+			return getAsArray(lang);
+		}
+	]]></title>
+	<field mode="on">
+		<description></description>
+		<name>version</name>
+		<value source="MACRO">SERVER_VERSION</value>
+	</field>
+	<field mode="on">
+		<description></description>
+		<name>build</name>
+		<value source="MACRO">COMPILATION_TIME</value>
+	</field>
+	<field mode="on">
+		<name>org</name>
+		<value source="MACRO">ORG_NAME</value>
+	</field>
+	<field mode="on">
+		<description></description>
+		<name>img</name>
+		<value source="MACRO">APPLICATION_LOGO</value>
+	</field>
+	<field mode="on">
+		<description></description>
+		<name>appname</name>
+		<value source="MACRO">APPLICATION_NAME</value>
+	</field>
+
+	<glossary mode="on" id="langs" source="macro">AVAILABLE_LANGS</glossary>
+	<glossary mode="on" id="skins" source="macro">AVAILABLE_SKINS</glossary>
+	<glossary mode="on" id="apps" source="macro">AVAILABLE_APPLICATIONS</glossary>
+
+	 <glossary mode="on" id="status" source="vocabulary">
+		<value>test</value>
+	</glossary>
+ 
+ 	<caption name="logout" source="KEYWORD">Завершить работу</caption>
+ 	<caption name="anothercomp" source="KEYWORD">Чужой компьютер</caption>
+ 	<caption name="user" source="KEYWORD">Пользователь</caption>
+ 	<caption name="password" source="KEYWORD">Пароль</caption>
+ 	<caption name="rememberpassword" source="KEYWORD">Запомнить пароль</caption>
+ 	<caption name="login" source="KEYWORD">Войти</caption>
+	
+	
+</rule>

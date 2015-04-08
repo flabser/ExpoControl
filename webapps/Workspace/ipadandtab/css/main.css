@@ -1,0 +1,277 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: transparent url(../img/f.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font: 100% "Segoe UI", Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+img {
+	border: none;
+}
+
+input[type=text],
+input[type=password] {
+	border: 1px solid #EEE;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+	border: 1px solid #999;
+}
+
+label input[type=checkbox] {
+	margin-right: .3em;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: ' ';
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* header */
+.header {
+	background: url(../img/body.png) repeat-x;
+	display: block;
+	max-height: 115px;
+	padding: 0;
+	position: relative;
+	margin: 0;
+	z-index: 3;
+}
+
+.header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header ul li {
+	display: inline-block;
+	margin: 0;
+	padding: auto;
+}
+
+.header .brand {
+	color: white;
+	display: block;
+	height: 115px;
+	float: left;
+	font-size: 2.7em;
+	font-size: 2.7vw;
+	font-family: Roboto, Arial, Tahoma;
+	line-height: 115px;
+	margin: 0 1em;
+	overflow: hidden;
+	word-wrap: normal;
+	white-space: nowrap;
+}
+
+.sign-in {
+	float: right;
+	padding: .5em .5em 1em 0;
+}
+
+.sign-in-fieldset-bottom {
+	display: block;
+	padding: .3em;
+}
+
+form {
+	display: block;
+	font-size: .8em;
+}
+
+.user {
+	float: right;
+	margin: 0 16px;
+}
+
+.btn-logout {
+	float: right;
+	padding: 3px 8px 2px 8px !important;
+	margin-left: 8px;
+}
+
+.form-group {
+	display: block;
+	max-width: 100%;
+}
+
+.fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fieldset .fieldset-container {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.fieldset .control-group {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.fieldset .control-label {
+	display: block;
+	font-size: .8em;
+	padding : 4px 4px 1px;
+	margin: 0;
+}
+
+.controls {
+	display: block;
+	padding: 4px;
+	max-width: 100%;
+	min-height: 1.1em;
+	display: block;
+}
+
+.btn-submit {
+	padding: 3px 8px !important;
+	margin: 0 8px;
+	float: right;
+}
+
+/* footer */
+.footer {
+	padding: 0 .3em;
+	padding-top: 1em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.footer .vers {
+	font-size: .7em;
+}
+
+.footer .logo {
+	float: right;
+}
+
+/* app-list */
+.app-list {
+	padding: .6em;
+	position: relative;
+	margin: auto;
+	z-index: 1;
+}
+
+.app {
+	display: inline-block;
+	height: 180px;
+	line-height: normal;
+	font-size: 13px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	text-decoration: none !important;
+	vertical-align: top;
+	width: 240px;
+	zoom: 1;
+}
+
+.app:hover {
+	border: 1px solid #79b7e7;
+	background: #d0e5f5 url(../img/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x;
+	font-weight: bold;
+	color: #1d5987;
+}
+
+.gray {
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: gray; /* IE6-9 */
+}
+
+.desctop {
+	display: block;
+}
+
+@media ( max-width : 960px), ( max-width : 1024px) {
+	.header .brand {
+		/* font-size: 2em; */
+	}
+}
+
+@media ( max-width : 480px) , ( max-width : 570px) , ( max-width : 640px) {
+	.header .brand {
+		margin: 0.1em;
+	}
+}
+
+@media ( max-width : 480px) , ( max-width : 570px) , ( max-width : 640px), ( max-width : 780px), ( max-width : 960px) , handheld {
+	.desctop {
+		display: none !important;
+	}
+	.footer {
+		position: relative;
+	}
+	.header {
+		height: 85px;
+	}
+	.header .brand {
+		height: 85px;
+		font-size: 1.7em;
+		line-height: 85px;
+		width: 95%;
+	}
+	.form-group {
+		margin: 10% auto;
+		width: 260px;
+	}
+	.sign-in {
+		clear: both;
+		margin: auto;
+		max-width: 97%;
+		width: 100%;
+	}
+	.fieldset {
+		display: block;
+		padding: .3em;
+	}
+	.fieldset .control-group {
+		display: block;
+	}
+	.btn-submit {
+		padding: 8px !important;
+	}
+	#login,
+	#pwd {
+		padding: 4px;
+		width: 100%;
+	}
+	.sign-in-fieldset-bottom {
+		margin-top: 1em;
+	}
+}

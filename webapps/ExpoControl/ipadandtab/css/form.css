@@ -1,0 +1,84 @@
+.small .formtitle{	
+	font: 1.5em 'trebuchet MS', 'Lucida Sans', Arial;
+	color:#0857A6;
+	margin-top:0.5em; 
+}
+
+.small .fc{
+   	text-align:right;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 5px;
+    width: 25%;
+    vertical-align:top;
+    color:#0857A6;
+}
+
+
+/*для ipad*/
+
+
+.formtitle{	
+	font: 1.5em 'trebuchet MS', 'Lucida Sans', Arial;
+	color:#0857A6;
+	margin-top:0.5em; 
+}
+
+.resolTitle{
+	font: 0.6em 'trebuchet MS', 'Lucida Sans', Arial;
+	color:#0857A6;
+	margin-top:0.5em; 
+}
+
+.controlStatus{
+	font: 14px 'trebuchet MS', 'Lucida Sans', Arial;
+	float:right;
+}
+
+table{
+    font-size: 13px;
+}
+
+.fc{
+   	text-align:right;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 5px;
+    width: 25%;
+    vertical-align:top;
+    color:#0857A6;
+}
+
+.fcontent table, div{
+    font-size: 13px;
+}
+
+textarea{
+	border: 1px solid #DDDDDD;
+}
+
+
+body{
+	background: -moz-linear-gradient(90deg, #CCCCCC, #FFFFFF) repeat scroll 0 0 transparent;
+	font-family: 'trebuchet MS', 'Lucida Sans', Arial;
+}
+
+input[type="text"], textarea {
+    background: -moz-linear-gradient(90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 3px #AAAAAA;
+    padding: 5px;
+}
+
+.tablefield {
+	border-collapse:collapse;
+	font-size:14px;
+}
+
+.tablefield td{
+	border-bottom:1px solid #ccc;
+	
+}

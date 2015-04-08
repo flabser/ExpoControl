@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rule type="page" id="process_event" mode="on" history="off">
+	<description></description>
+	<caching>NO_CACHING</caching>
+	<element mode="ON" type="SCRIPT">
+		<name>view_content</name>
+		<events>
+			<doscript source="file">page.process_event.DoScript</doscript>
+		</events>
+	</element>
+</rule>

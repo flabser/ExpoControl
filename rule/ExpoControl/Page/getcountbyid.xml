@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rule type="page" id="getcountbyid" mode="on" history="on">
+	<description></description>
+	<caching>NO_CACHING</caching>
+	<element mode="ON" type="INCLUDED_PAGE">
+		<name>outline</name>
+		<value>outline</value>
+	</element>
+	<element mode="ON" type="SCRIPT">
+		<name>view_content</name>
+		<events>
+			<doscript source="file">page.getcountbyid.DoScript</doscript>
+		</events>
+	</element>
+</rule>

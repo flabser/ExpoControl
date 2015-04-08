@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rule type="form" id="personal" mode="on" history="on">
+	<description>Персонал</description>
+	<xsltfile>forms/personal.xsl</xsltfile>
+	<doctype>main</doctype>
+	<events>
+		<queryopen source="file">form.personal.QueryOpen</queryopen>
+		<querysave source="file">form.personal.QuerySave</querysave>
+		<postsave source="file">form.personal.PostSave</postsave>
+	</events>
+	<caption name="close" source="KEYWORD">Закрыть</caption>
+	<caption name="properties" source="KEYWORD">Свойства</caption>
+	<caption name="attachments" source="KEYWORD">Вложения</caption>
+	<caption name="content" source="KEYWORD">Содержание</caption>
+	<caption name="date" source="KEYWORD">дата</caption>
+	<caption name="saved" source="KEYWORD">Сохраненный</caption>
+	<caption name="newdoc" source="KEYWORD">Новый документ</caption>
+	<caption name="editing" source="KEYWORD">Редактирование</caption>
+	<caption name="readonly" source="KEYWORD">Только для чтения</caption>
+	<caption name="modenotdefined" source="KEYWORD">Режим не определен</caption>
+	<caption name="attach" source="KEYWORD">Прикрепить</caption>
+	<caption name="delattach" source="KEYWORD">Удалить</caption>
+	<caption name="openattach" source="KEYWORD">Открыть</caption>
+	<caption name="briefcontent" source="KEYWORD">Краткое содержание</caption>
+	<caption name="project" source="KEYWORD">Проект</caption>
+	<caption name="logout" source="KEYWORD">Завершить работу</caption>
+	<caption name="cancel" source="KEYWORD">Отмена</caption>
+	<caption name="changeview" source="KEYWORD">Изменить вид</caption>
+	<caption name="commentcaption" source="KEYWORD">Комментарий</caption>
+	<caption name="searchcaption" source="KEYWORD">поиск</caption>
+	<caption name="files" source="KEYWORD">Файлы</caption>
+	<caption name="additional" source="KEYWORD">Дополнительно</caption>
+	<caption name="statusdoc" source="KEYWORD">Состояние документа</caption>
+	<caption name="permissions" source="KEYWORD">Права доступа</caption>
+	<caption name="infofread" source="KEYWORD">Информация о прочтении</caption>
+	<caption name="infofreaders" source="KEYWORD">Кем прочтен</caption>
+	<caption name="new" source="KEYWORD">Новое</caption>
+	<caption name="category" source="KEYWORD">Категория</caption>
+	<caption name="conectedproject" source="KEYWORD">Связан с проектом</caption>
+	<caption name="help" source="KEYWORD">Помощь</caption>
+	<caption name="documentsavedcaption" source="KEYWORD">Документ сохранен</caption>
+	<caption name="documentmarkread" source="KEYWORD">Документ отмечен как прочтенный</caption>
+	<caption name="taskvn" source="KEYWORD">Номер</caption>
+	<caption name="controlstatus" source="KEYWORD">Статус контроля</caption>
+	<caption name="status" source="KEYWORD">Статус</caption>
+	<caption name="dvn" source="KEYWORD">от</caption>
+	<caption name="author" source="KEYWORD">Автор</caption>
+	<caption name="comment" source="KEYWORD">Примечание</caption>
+	<caption name="pdocviewtext" source="KEYWORD">Головной документ</caption>
+	<caption name="pdocviewtextsummary" source="KEYWORD">Краткое содержание главного документа</caption>
+	<caption name="notesexecuted" source="KEYWORD">Отметки о исполнении</caption>
+	<caption name="saving" source="KEYWORD">Сохранение</caption>
+	<caption name="showfilename" source="KEYWORD">Укажите имя файла для вложения</caption>
+	<caption name ="addcommentforattachment" source ="KEYWORD">Добавить комментарий к вложению?</caption>
+	<caption name="warning" source="KEYWORD">Предупреждение</caption>
+	<caption name="whomread" source="KEYWORD">Кем прочтен</caption>
+	<caption name="timeofreading" source="KEYWORD">Время прочтения</caption>
+	<caption name="attention" source="KEYWORD">Внимание</caption>
+	<caption name="add_comment" source="KEYWORD">Добавить комментарий</caption>
+	<caption name="delete_file" source="KEYWORD">Удалить файл</caption>
+	<caption name="comments" source="KEYWORD">комментарий</caption>
+	<caption name ="view_userprofile" source ="KEYWORD">Посмотреть свойства текущего пользователя</caption>
+    <caption name="documentnotsigned" source="KEYWORD">Документ не подписан</caption>
+    <caption name ="yes" source ="KEYWORD">Да</caption>
+	<caption name ="no" source ="KEYWORD">Нет</caption>
+	<caption name="saveclose" source="KEYWORD">Сохранить и закрыть</caption>
+	<caption name="surname" source="KEYWORD">Фамилия</caption>
+	<caption name="name" source="KEYWORD">Имя</caption>
+	<caption name="patronymic" source="KEYWORD">Отчество</caption>
+	<caption name="rfid" source="KEYWORD">ID RFID билета</caption>
+	<caption name="division" source="KEYWORD">Подразделение</caption>
+	<glossary mode="on" id="personal_category" source="query">
+		<description>Категория персонала</description>
+		<value>personal_category</value>
+	</glossary>
+	<glossary mode="on" id="division" source="query">
+		<description>Подразделение персонала</description>
+		<value>division</value>
+	</glossary>
+</rule>
